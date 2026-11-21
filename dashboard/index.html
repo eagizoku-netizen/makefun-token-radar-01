@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Token Launch Radar — pre-token protocols ranked by implied value</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <span class="mark" aria-hidden="true"><span class="sweep"></span></span>
+    <div>
+      <h1>Token Launch Radar</h1>
+      <p class="tag">Pre-token protocols, ranked by the value their record supports — and how to farm each one.</p>
+    </div>
+  </div>
+  <div class="stamp" id="stamp"></div>
+</header>
+<main id="app" aria-busy="true">
+  <section id="board-view">
+    <div class="stats" id="stats"></div>
+    <div class="panel model" id="model"></div>
+    <div class="panel">
+      <div class="controls" id="controls"></div>
+      <div class="tablewrap">
+        <table id="board">
+          <thead><tr>
+            <th class="num">#</th><th>Protocol</th><th>Category</th><th>Chains</th>
+            <th class="num">TVL</th><th class="num">7d</th><th class="num">Age</th>
+            <th class="num">Mult</th><th class="num">Implied value</th>
+          </tr></thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+      <p class="count" id="count"></p>
+    </div>
+  </section>
+  <section id="detail-view" hidden></section>
+</main>
+<footer class="foot" id="foot"></footer>
+<script src="../data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
